@@ -31,7 +31,18 @@
             <h2>Primeira interação.</h2>
             <p>Por: Rodrigo de Carvalho</p>
             <p>Bem vindo à página de testes.</p>
+            <button>❤️​ <span>0</span></button>
         </div>
     </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click");
+
+    function botaoClicado(){
+        console.log("clicked");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
